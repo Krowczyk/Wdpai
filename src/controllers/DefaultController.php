@@ -15,4 +15,8 @@ class DefaultController extends AppController{
         // display search.php
         $this->render('search');
     }
+    public function addprojects(){
+        $this->render('addprojects');
+    }
+
 }

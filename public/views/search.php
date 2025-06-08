@@ -9,7 +9,7 @@
 <body>
 
   <header>
-    <a href="index.html" class="home-icon">
+    <a href="projects" class="home-icon">
       <img src="public/JPG/home-icon.svg" alt="Strona główna">
     </a>
     <h1>OTOLOTO</h1>

@@ -12,6 +12,19 @@ img.logo {
   width: 100px;
   margin-bottom: 10px;
 }
+.home-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  z-index: 1000; /* upewnia się, że jest nad innymi elementami */
+}
+
+.home-icon img {
+  width: 100%;
+  height: auto;
+}
 
 h1 {
   font-family: 'Courier New', monospace;

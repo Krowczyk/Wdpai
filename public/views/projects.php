@@ -13,7 +13,7 @@
   <img src="public/JPG/logo.svg" alt="Logo OTOLOTO" class="logo" />
   <h1>OTOLOTO</h1>
 
-  <form class="form-container">
+  <form class="form-container" action="search" method="post">
     <select name="marka"><option disabled selected>MARKA</option></select>
     <select name="model"><option disabled selected>MODEL</option></select>
     <select name="rocznik"><option disabled selected>ROCZNIK</option></select>
@@ -21,6 +21,10 @@
     <select name="cena_od"><option disabled selected>CENA OD</option></select>
     <select name="cena_do"><option disabled selected>CENA DO</option></select>
     <button type="submit" class="search-button">WYSZUKAJ</button>
+  </form>
+  <form class="form-container" action="addprojects" method="post">
+      <div></div>
+      <button type="submit"  class="search-button">DODAJ OGŁOSZENIE</button>
   </form>
 </body>
 </html>
