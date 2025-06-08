@@ -17,17 +17,23 @@
     </div>
     <div class="right-panel">
       <h2>PANEL LOGOWANIA</h2>
-      <form>
+      <form  action="login" method="POST">
+          <div class="messeges">
+              <?php if(isset($messages)){
+                  foreach($messages as $message){
+                      echo $message;
+                  }
+                  } ?>
+          </div>
         <div class="input-group">
           <i class="fas fa-house"></i>
-          <input type="text" placeholder="LOGIN" />
+          <input name="email" type="text" placeholder="LOGIN" />
         </div>
         <div class="input-group">
           <i class="fas fa-lock"></i>
-          <input type="password" placeholder="PASSWORD" />
+          <input name="password" type="password" placeholder="PASSWORD" />
         </div>
         <div class="buttons">
-          <button type="submit" class="btn">Sign in</button>
           <button type="submit" class="btn">Login</button>
         </div>
       </form>

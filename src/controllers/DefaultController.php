@@ -4,15 +4,15 @@ require_once 'AppController.php';
 class DefaultController extends AppController{
 
     public function index(){
-        // display login.html
+        // display login.php
         $this->render('login');
     }
     public function projects(){
-        // display projects.html
+        // display projects.php
         $this->render('projects');
     }
     public function search(){
-        // display search.html
+        // display search.php
         $this->render('search');
     }
 }
