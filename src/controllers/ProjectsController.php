@@ -16,7 +16,7 @@ class ProjectsController extends AppController
          );
 
          $plane = new Plane($_POST['marka'], $_POST['cena'], $_POST['zastosowanie'], $_POST['rocznik'], $_POST['model'],$_FILES['file']['name']);
-         return $this->render('projects', ['messages' => $this->messages]);
+         return $this->render('projects', ['messages' => $this->messages, 'Plane' => $plane]);
      }
      return $this->render('addproject', ['messages' => $this->messages]);
  }

@@ -18,8 +18,8 @@
     <form class="form-container" action="addPlane" method="Post" enctype="multipart/form-data">
         <input name="marka" type="Text" placeholder="Marka">
         <input name="model" type="Text" placeholder="Model">
-        <input name="Cena" type="number" placeholder="Cena">
-        <input name="Rocznik" type="number" placeholder="Rocznik">
+        <input name="cena" type="Text" placeholder="Cena">
+        <input name="rocznik" type="Text" placeholder="Rocznik">
         <input name="zastosowanie" type="Text" placeholder="Zastosowanie">
 
         <div> <input type="file" name="file">  </div>

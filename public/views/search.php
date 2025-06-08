@@ -18,17 +18,17 @@
   <main class="offer-list">
 
     <div class="offer">
-      <img src="public/JPG/a320.jpg" alt="Airbus A320">
+      <img src="public/uload/<?= $Plane->getImage()?>">
       <div class="offer-details">
         <h2>Airbus A320</h2>
         <div class="columns">
           <div>
-            <p><strong>Marka:</strong> Airbus</p>
-            <p><strong>Model:</strong> A320</p>
-            <p><strong>Rocznik:</strong> 2006</p>
+            <p><strong>Marka:</strong> <?=$Plane->getMarka()?></p>
+            <p><strong>Model:</strong> <?=$Plane->getModel()?></p>
+            <p><strong>Rocznik:</strong> <?=$Plane->getRok()?></p>
           </div>
           <div>
-            <p><strong>Zastosowanie:</strong> Komercyjne</p>
+            <p><strong>Zastosowanie:</strong> <?=$Plane->getZastosowanie()?></p>
             <p><strong>Lokalizacja:</strong> Szwajcaria</p>
           </div>
         </div>
