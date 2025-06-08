@@ -16,7 +16,7 @@ body {
   padding: 20px;
 }
 
-/* Lewy panel - logo */
+
 .left-panel {
   flex: 1;
   min-width: 300px;
@@ -40,7 +40,7 @@ body {
   text-align: center;
 }
 
-/* Prawy panel - formularz */
+
 .right-panel {
   flex: 1;
   min-width: 300px;
