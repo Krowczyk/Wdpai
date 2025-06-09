@@ -17,43 +17,26 @@
 
   <main class="offer-list">
 
-    <div class="offer">
-      <img src="public/uload/<?= $Plane->getImage()?>">
-      <div class="offer-details">
-        <h2>Airbus A320</h2>
-        <div class="columns">
-          <div>
-            <p><strong>Marka:</strong> <?=$Plane->getMarka()?></p>
-            <p><strong>Model:</strong> <?=$Plane->getModel()?></p>
-            <p><strong>Rocznik:</strong> <?=$Plane->getRok()?></p>
+      <?php foreach ($planes as $Plane): ?>
+          <div class="offer">
+              <img src="public/uploads/<?= $Plane->getImage()?>">
+              <div class="offer-details">
+                  <h2><?=$Plane->getMarka()?>  <?=$Plane->getModel()?></h2>
+                  <div class="columns">
+                      <div>
+                          <p><strong>Marka:</strong> <?=$Plane->getMarka()?></p>
+                          <p><strong>Model:</strong> <?=$Plane->getModel()?></p>
+                          <p><strong>Rocznik:</strong> <?=$Plane->getRocznik()?></p>
+                      </div>
+                      <div>
+                          <p><strong>Zastosowanie:</strong> <?=$Plane->getZastosowanie()?></p>
+                          <p><strong>Lokalizacja:</strong> Szwajcaria</p>
+                      </div>
+                  </div>
+                  <p class="price">CENA : <?=$Plane->getCena()?></p>
+              </div>
           </div>
-          <div>
-            <p><strong>Zastosowanie:</strong> <?=$Plane->getZastosowanie()?></p>
-            <p><strong>Lokalizacja:</strong> Szwajcaria</p>
-          </div>
-        </div>
-        <p class="price">CENA : 20 000 000 zł</p>
-      </div>
-    </div>
-
-    <div class="offer">
-      <img src="public/JPG/c130.jpg" alt="C130 Hercules">
-      <div class="offer-details">
-        <h2>C130 Hercules</h2>
-        <div class="columns">
-          <div>
-            <p><strong>Marka:</strong> Lockheed</p>
-            <p><strong>Model:</strong> C-130 Hercules</p>
-            <p><strong>Rocznik:</strong> 1997</p>
-          </div>
-          <div>
-            <p><strong>Zastosowanie:</strong> Wojskowe</p>
-            <p><strong>Lokalizacja:</strong> Stany Zjednoczone</p>
-          </div>
-        </div>
-        <p class="price">CENA : 80 000 000 zł</p>
-      </div>
-    </div>
+      <?php endforeach; ?>
 
 
 

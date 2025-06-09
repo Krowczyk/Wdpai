@@ -7,14 +7,7 @@ class DefaultController extends AppController{
         // display login.php
         $this->render('login');
     }
-    public function projects(){
-        // display projects.php
-        $this->render('projects');
-    }
-    public function search(){
-        // display search.php
-        $this->render('search');
-    }
+
     public function addprojects(){
         $this->render('addprojects');
     }

@@ -10,6 +10,12 @@
   <script src="https://kit.fontawesome.com/45b458fc94.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<form class="form-container" action="login" method="GET">
+    <div class="buttons">
+        <button type="submit" class="btn">Wyloguj</button>
+    </div>
+</form>
+
   <img src="public/JPG/logo.svg" alt="Logo OTOLOTO" class="logo" />
   <h1>OTOLOTO</h1>
 
@@ -26,25 +32,6 @@
       <div></div>
       <button type="submit"  class="search-button">DODAJ OGŁOSZENIE</button>
   </form>
-
-  <div class="offer">
-      <img src="public/uploads/<?= $Plane->getImage()?>">
-      <div class="offer-details">
-          <h2>Airbus A320</h2>
-          <div class="columns">
-              <div>
-                  <p><strong>Marka:</strong> <?=$Plane->getMarka()?></p>
-                  <p><strong>Model:</strong> <?=$Plane->getModel()?></p>
-                  <p><strong>Rocznik:</strong> <?=$Plane->getRocznik()?></p>
-              </div>
-              <div>
-                  <p><strong>Zastosowanie:</strong> <?=$Plane->getZastosowanie()?></p>
-                  <p><strong>Lokalizacja:</strong> Szwajcaria</p>
-              </div>
-          </div>
-          <p class="price">CENA : 20 000 000 zł</p>
-      </div>
-  </div>
 
 </body>
 </html>

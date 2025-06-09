@@ -7,6 +7,7 @@
   <link rel="stylesheet" type="text/css" href="public/styles/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
+
 <body>
   <div class="container">
     <div class="left-panel">
@@ -34,9 +35,18 @@
           <input name="password" type="password" placeholder="PASSWORD" />
         </div>
         <div class="buttons">
-          <button type="submit" class="btn">Login</button>
+          <button type="submit" class="btn" style="margin-bottom: 10px;" >Login</button>
         </div>
       </form>
+        <form action="register" method="get">
+            <div> </div>
+            <div class="buttons">
+                <button type="submit" class="btn">Register</button>
+            </div>
+        </form>
+
+
+
     </div>
   </div>
 </body>
