@@ -31,7 +31,7 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-bottom: 40px; /* miejsce na paginację */
+  margin-bottom: 40px;
 }
 
 /* === Pojedyncza oferta === */
