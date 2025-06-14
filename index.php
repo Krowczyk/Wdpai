@@ -9,7 +9,6 @@ Routing::get('projects','ProjectsController');
 Routing::get('search','ProjectsController');
 Routing::get('addprojects','DefaultController');
 Routing::get('register','SecurityController');
-
 Routing::post('login','SecurityController');
 Routing::post('addPlane','ProjectsController');
 
