@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OTOLOTO - Oferty</title>
   <link rel="stylesheet" href="public/styles/oferty.css">
+    <script defer src="public/scripts/oferty.js"></script>
 </head>
 <body>
 
