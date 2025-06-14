@@ -30,5 +30,7 @@ Zbiorcza lista ogłoszeń:
 
 
 Aplikacja działa na desktopach oraz urządzeniach mobilnych
+
+
 📜 Licencja
 OTOLOTO jest dostępne na licencji MIT.
