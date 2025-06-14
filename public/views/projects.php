@@ -32,6 +32,5 @@
       <div></div>
       <button type="submit"  class="search-button">DODAJ OGŁOSZENIE</button>
   </form>
-
 </body>
 </html>
