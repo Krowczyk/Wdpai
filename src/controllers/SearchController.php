@@ -4,6 +4,7 @@ require_once __DIR__ . '/../models/Plane.php';
 class SearchController extends AppController
 {
     public function search() {
+
         $plane = new Plane('Airbus','10000000','Publiczne','2006','A340');
 
         $marka = $_POST['marka'];
@@ -12,9 +13,6 @@ class SearchController extends AppController
         $rocznik = $_POST['rocznik'];
         $model = $_POST['model'];
 
-
-        $url = "http://$_SERVER[HTTP_HOST]";
-        header("Location: {$url}/search");
     }
 
     public function addprojects() {

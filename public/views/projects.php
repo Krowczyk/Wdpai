@@ -10,7 +10,7 @@
   <script src="https://kit.fontawesome.com/45b458fc94.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<form class="form-container" action="login" method="GET">
+<form class="form-container" action="logout" method="GET">
     <div class="buttons">
         <button type="submit" class="btn">Wyloguj</button>
     </div>

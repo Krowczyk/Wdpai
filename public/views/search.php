@@ -31,7 +31,6 @@
                       </div>
                       <div>
                           <p><strong>Zastosowanie:</strong> <?=$Plane->getZastosowanie()?></p>
-                          <p><strong>Lokalizacja:</strong> Szwajcaria</p>
                       </div>
                   </div>
                   <p class="price">CENA : <?=$Plane->getCena()?></p>

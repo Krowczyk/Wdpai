@@ -8,6 +8,7 @@ class SecurityController extends AppController
 {
     public function login()
     {
+
         if (!$this->isPost()) {
             return $this->render('login');
         }
@@ -29,12 +30,18 @@ class SecurityController extends AppController
         if (!password_verify($password, $user->getPassword())) {
             return $this->render('login', ['messages' => ['Nieprawidłowe hasło.']]);
         }
+        if(session_status() == PHP_SESSION_NONE) {
+            session_start();
+        }
+        $_SESSION['email']  = $user->getEmail();
 
         // Logowanie zakończone sukcesem
         $url = "http://$_SERVER[HTTP_HOST]";
         header("Location: {$url}/projects");
         exit();
     }
+
+
 
     public function register()
     {
@@ -67,6 +74,28 @@ class SecurityController extends AppController
         $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
         $user = new User($email, $hashedPassword);
         $userRepository->addUser($user);
+
+        $url = "http://$_SERVER[HTTP_HOST]";
+        header("Location: {$url}/login");
+        exit();
+    }
+
+    public function logout() {
+        if (session_status() === PHP_SESSION_NONE) {
+            session_start();
+        }
+
+        $_SESSION = [];
+
+        if (ini_get("session.use_cookies")) {
+            $params = session_get_cookie_params();
+            setcookie(session_name(), '', time() - 42000,
+                $params["path"], $params["domain"],
+                $params["secure"], $params["httponly"]
+            );
+        }
+
+        session_destroy();
 
         $url = "http://$_SERVER[HTTP_HOST]";
         header("Location: {$url}/login");
